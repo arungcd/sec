@@ -12,7 +12,10 @@ Experiment 3
  
 Experiment 4 
 ● Wapiti:- Installation:- 1. Download wapiti 3.0.2. 2. Extract using “sudo unzip wapiti3-3.0.2.zip” 3. cd wapiti3-3.0.2 4. sudo apt-get install python3-venv libxml2 libxml2-dev libz-dev libxslt1-dev python3-dev 5. sudo python3 -m venv wapiti_venv 6. . wapiti_venv/bin/activate 7. sudo python setup.py install 8. Wapiti -h (For help). Execution:- 1. wapiti -u http://testphp.vulnweb.com/ 
- 
+ foremost -t all -i /mnt/sdb.dd -o /home/divyang/Delete/
+df:  stat file.c   df -h   sudo debugfs -R 'stat <INODE>' /dev/sda1 
+
+
 ● Beef:- Installation:- 1. sudo apt-get install ruby ruby-dev 2. sudo apt-get install git 3. git clone https://github.com/beefproject/beef 4. cd beef 5. ./install 6. sudo ./install Execution:-  (“https://www.youtube.com/watch?v=sB9whT_QILA”) 1. ./beef 2. Change default password from config.ymal 3. Open browser and go to http://127.0.0.1:3000/ui/authentication 4. Enter username and password. 5. And visit above given link for execution. 
  
  
@@ -24,6 +27,8 @@ Experiment 6 ● Metasploit:-(“​https://github.com/rapid7/metasploit-framewo
  
 Experiment 9 ● “​https://www.youtube.com/watch?v=ycH4Cprtcow​” 
  Experiment 11 ● DD:- 1. sudo dd if=/dev/sda1 of=dhruv bs=65536 conv=noerror,sync ● DC3DD:- 1. sudo apt-get install dc3dd 2. sudo dc3dd if=/dev/sda1 of=/mnt/sdb.dd hash=md5 ● Debugfs:- 1. Visit the link https://www.tecmint.com/debugfs-command-show-file-creation-time-in-linux/ 
+ scalpel /mnt/sdb.dd -o /home/divyang/recover/Scalpel
+ 
  
 Experiment 12 ● FTKImager:-(“​https://www.cybrary.it/0p3n/using-ftk-imager-cli-challenging-new-disks -technologies​”) Installation:- 1. curl -o ftk.tar.gz https://ad-zip.s3.amazonaws.com/ftkimager.3.1.1_ubuntu64.tar.gz  2. tar zxvf ftk.tar.gz  3. sudo mv ftkimager /usr/local/bin  4. cd /usr/local/bin Execution:- 1. sudo ./ftkimager /dev/sda1 /home/viraj/ --e01 --compress 9 --case-number 1700345498 --evidence-number ITEM001 --description "This crime happened today " --examiner "Viraj" --notes "Cases and Notes" 
  
